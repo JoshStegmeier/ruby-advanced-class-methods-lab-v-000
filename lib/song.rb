@@ -42,7 +42,7 @@ class Song
   end
 
   def self.alphabetical
-    newArray = self.all.sort
+    newArray = self.all.name.sort
     newArray
   end
 
