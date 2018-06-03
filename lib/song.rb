@@ -43,6 +43,7 @@ class Song
 
   def self.alphabetical
     newArray = self.all.sort
+    newArray
   end
 
 end
