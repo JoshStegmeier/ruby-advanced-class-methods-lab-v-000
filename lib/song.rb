@@ -41,4 +41,8 @@ class Song
     end
   end
 
+  def self.alphabetical
+    newArray = self.all.sort
+  end
+
 end
