@@ -42,7 +42,13 @@ class Song
   end
 
   def self.alphabetical
-    newArray = self.all.sort! { |a, b| a.name.downcase <=> b.name.downcase}
+    newlySortedArray = self.all.sort! { |a, b| a.name.downcase <=> b.name.downcase}
+  end
+
+  def self.new_from_filename(file_name)
+    splitArray = file_name.split(" - ")
+    artist_name = splitArray[0]
+    song_name = splitArray[1].gsub(".mp3", "")
   end
 
 end
