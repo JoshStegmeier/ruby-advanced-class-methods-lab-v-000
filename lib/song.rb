@@ -42,8 +42,7 @@ class Song
   end
 
   def self.alphabetical
-    newArray = self.all
-    newArray.sort
+    newArray = self.all.sort! { |a, b| a.name.downcase <=> b.name.downcase}
   end
 
 end
